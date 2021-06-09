@@ -4,8 +4,12 @@ export default class PostsDAO {
     static async getAllPosts() {
         const { db } = await connectToDatabase();
 
-        const posts = await db.collection('Post').find().toArray();
+        return await db.collection('Post').find().toArray();
+    }
 
-        return posts;
+    static async createPost(post) {
+        const { db } = await connectToDatabase();
+
+        return await db.collection('Post').insertOne(post);
     }
 }
