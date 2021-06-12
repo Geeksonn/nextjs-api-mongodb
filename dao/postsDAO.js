@@ -1,4 +1,4 @@
-import { connectToDatabase } from '../utils/mongodb';
+import connectToDatabase from '@geekson/mongodb-connector';
 
 export default class PostsDAO {
     static async getAllPosts() {

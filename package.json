@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@geekson/mongodb-connector": "^1.0.3",
     "mongodb": "^3.6.9",
     "next": "10.2.3",
     "next-connect": "^0.10.1",
